@@ -1,3 +1,4 @@
+ФАЙЛ main.py(ниже другие)
 import telebot
 from config import keys, TOKEN
 from extensions import CryptoConverter, ConvertionExceprion
@@ -35,7 +36,7 @@ def converter(message: telebot.types.Message):
 bot.polling()
 
 
-файл extensions.py
+ФАЙЛ extensions.py
 
 import requests
 import json
@@ -65,7 +66,7 @@ class CryptoConverter:
         total_base = json.loads(r.content)[keys[base]]
         return total_base
 
-файл config.py:
+ФАЙЛ config.py:
 
 TOKEN = 'введите свой))'
 
